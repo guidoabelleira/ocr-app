@@ -89,7 +89,7 @@ class Upload extends Component {
     this.setState({confirmation:""});
 
     const OCRBody = await response.json();
-    console.log("Response: ", OCRBody);
+    // console.log("Response: ", OCRBody);
 
     this.setState({amount: OCRBody.body[0]});
     this.setState({invoice: OCRBody.body[1]});
