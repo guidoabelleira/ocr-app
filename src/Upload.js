@@ -32,9 +32,11 @@ class Upload extends Component {
     
     handleChange(event){
         event.preventDefault();
-        const target = event.target;
+        // const target = event.target;
         const value = event.value;
+        // eslint-disable-next-line
         const name = event.name;
+        
 
         this.setState({name:value})
     }
